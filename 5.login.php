@@ -16,13 +16,13 @@
     
     if  (!$_POST["id"] || !$_POST["pwd"]){
            echo "請輸入帳號/密碼"; 
-           echo "<meta http-equiv='refresh' content='3;url=login.html''>";              
+           echo "<meta http-equiv='refresh' content='3;url=login.html'>";              
     }
     elseif ($login==TRUE){
       echo "歡迎登入";    
     }
     else{
       echo "帳號密碼錯誤";
-      echo "<meta http-equiv='refresh' content='3;url=login.html''>";          
+      echo "<meta http-equiv='refresh' content='3;url=login.html'>";          
     }
 ?>
