@@ -11,7 +11,7 @@
         echo "<table border=2><tr><td>佈告操作</td><td>佈告編號</td><td>佈告類別</td><td>標題</td><td>佈告內容</td><td>發佈時間</td></tr>";
         while ($row=mysqli_fetch_array($result)){
             echo "<tr><td>";
-            echo "<a href=post_edit_form.php?board_id='$row[board_id]'>修改</a> <a href=delete.php?bid={$row[bid]}>刪除</a>";
+            echo "<a href=bulletin_edit_form.php?bid='$row[bid]'>修改</a> <a href=delete.php?bid={$row[bid]}>刪除</a>";
             echo "</td><td>";
             echo $row[bid];
             echo "</td><td>";
