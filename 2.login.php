@@ -1,5 +1,5 @@
 <?php 
-    echo $_GET[id];
+    echo $_POST["id"];
     echo "<br>";
-    echo $_GET[pwd];
+    echo $_POST["pwd"];
 ?>
