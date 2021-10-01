@@ -1,5 +1,5 @@
 <?php 
-    if (($_GET[id] == "john") && ($_GET[pwd]=="john1234"))
+    if (($_POST[id] == "john") && ($_POST[pwd]=="john1234"))
         echo "Welcome";
     else
         echo "fail login";
