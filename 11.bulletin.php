@@ -6,7 +6,7 @@
         echo "<meta http-equiv=REFRESH content='3, url=2.login.html'>";
     }
     else{
-        echo "歡迎登入, ".$_SESSION["id"]."[<a href=12.logout.php>logout</a>]<br>";
+        echo "歡迎登入, ".$_SESSION["id"]."[<a href=12.logout.php>登出</a>]<br>";
         $conn=mysqli_connect("db4free.net", "immust", "immustimmust", "immust");
         $result=mysqli_query($conn, "select * from bulletin");
         echo "<table border=2><tr><td>佈告編號</td><td>佈告類別</td><td>標題</td><td>佈告內容</td><td>發佈時間</td></tr>";
