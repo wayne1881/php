@@ -3,12 +3,12 @@
     session_start();
     if (!$_SESSION["id"]) {
         echo "please login first";
-        echo "<meta http-equiv=REFRESH content='3, url=login.html'>";
+        echo "<meta http-equiv=REFRESH content='3, url=2.login.html'>";
     }
     else{
         
-        $conn=mysqli_connect("localhost","root","","mydb");
-        $result=mysqli_query($conn, "select * from bulletin where bid={$_GET[bid]}");
+        $conn=mysqli_connect("db4free.net", "immust", "immustimmust", "immust");
+        $result=mysqli_query($conn, "select * from bulletin where bid={$_GET["bid"]}");
         $row=mysqli_fetch_array($result);
         $checked1="";
         $checked2="";
@@ -23,7 +23,7 @@
         <html>
             <head><title>新增佈告</title></head>
             <body>
-                <form method=post action=bulletin_edit.php>
+                <form method=post action=27.bulletin_edit.php>
                     佈告編號：{$row['bid']}<input type=hidden name=bid value={$row['bid']}><br>
                     標    題：<input type=text name=title value={$row['title']}><br>
                     內    容：<br><textarea name=content rows=20 cols=20>{$row['content']}</textarea><br>
