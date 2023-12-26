@@ -10,7 +10,7 @@
         }
         else{   
             echo "<h1>使用者管理</h1>
-                [<a href=14.user_add_form.php>新增使用者</a>] [<a href=bulletin.php>回佈告欄列表</a>]<br>
+                [<a href=14.user_add_form.php>新增使用者</a>] [<a href=11.bulletin.php>回佈告欄列表</a>]<br>
                 <table border=1>
                     <tr><td></td><td>帳號</td><td>密碼</td></tr>";
             
