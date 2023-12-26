@@ -6,5 +6,5 @@
         $_SESSION["counter"]++;
 
     echo "counter=".$_SESSION["counter"];
-    echo "<br><a href=reset_counter.php>重置counter</a>";
+    echo "<br><a href=9.reset_counter.php>重置counter</a>";
 ?>
