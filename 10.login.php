@@ -1,6 +1,6 @@
 <?php
    #mysqli_connect() 建立資料庫連結
-   $conn=mysqli_connect("localhost","root","","mydb");
+   $conn=mysqli_connect("db4free.net", "immust", "immustimmust", "immust");
    #mysqli_query() 從資料庫查詢資料
    $result=mysqli_query($conn, "select * from user");
    #mysqli_fetch_array() 從查詢出來的資料一筆一筆抓出來
@@ -13,12 +13,12 @@
    if ($login==TRUE) {
     session_start();
     $_SESSION["id"]=$_POST["id"];
-    echo "welcome!!";
-    echo "<meta http-equiv=REFRESH content='3, url=bulletin.php'>";
+    echo "登入成功";
+    echo "<meta http-equiv=REFRESH content='3, url=11.bulletin.php'>";
    }
 
   else{
-    echo "id/pwd wrong!!";
-    echo "<meta http-equiv=REFRESH content='3, url=login.html'>";
+    echo "帳號/密碼 錯誤";
+    echo "<meta http-equiv=REFRESH content='3, url=2.login.html'>";
   }
 ?>
