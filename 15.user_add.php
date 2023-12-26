@@ -19,7 +19,7 @@ else{
    }
    else{
      echo "新增使用者成功，三秒鐘後回到網頁";
-     echo "<meta http-equiv=REFRESH content='3, url=11.bulletin.php'>";
+     echo "<meta http-equiv=REFRESH content='3, url=18.user.php'>";
    }
 }
 ?>
