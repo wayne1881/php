@@ -3,14 +3,14 @@
     session_start();
     if (!$_SESSION["id"]) {
         echo "please login first";
-        echo "<meta http-equiv=REFRESH content='3, url=login.html'>";
+        echo "<meta http-equiv=REFRESH content='3, url=2.login.html'>";
     }
     else{
         echo "
         <html>
             <head><title>新增佈告</title></head>
             <body>
-                <form method=post action=bulletin_add.php>
+                <form method=post action=23.bulletin_add.php>
                     標    題：<input type=text name=title><br>
                     內    容：<br><textarea name=content rows=20 cols=20></textarea><br>
                     佈告類型：<input type=radio name=type value=1>系上公告 
