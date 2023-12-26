@@ -3,10 +3,10 @@
     session_start();
     if (!$_SESSION["id"]) {
         echo "請登入帳號";
-        echo "<meta http-equiv=REFRESH content='3, url=login.html'>";
+        echo "<meta http-equiv=REFRESH content='3, url=2.login.html'>";
     }
     else{   
-        $conn=mysqli_connect("localhost","root","","mydb");
+        $conn=mysqli_connect("db4free.net", "immust", "immustimmust", "immust");
         $sql="delete from user where id='{$_GET[id]}'";
         #echo $sql;
         if (!mysqli_query($conn,$sql)){
@@ -14,6 +14,6 @@
         }else{
             echo "使用者刪除成功";
         }
-        echo "<meta http-equiv=REFRESH content='3, url=user.php'>";
+        echo "<meta http-equiv=REFRESH content='3, url=18.user.php'>";
     }
 ?>
