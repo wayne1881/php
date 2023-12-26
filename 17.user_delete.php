@@ -7,7 +7,7 @@
     }
     else{   
         $conn=mysqli_connect("db4free.net", "immust", "immustimmust", "immust");
-        $sql="delete from user where id='{$_GET[id]}'";
+        $sql="delete from user where id='{$_GET["id"]}'";
         #echo $sql;
         if (!mysqli_query($conn,$sql)){
             echo "使用者刪除錯誤";
