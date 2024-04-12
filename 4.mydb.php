@@ -9,3 +9,9 @@
     $row=mysqli_fetch_array($result);
     echo $row["id"] . " " . $row["pwd"];
 ?>
+步驟一：建立資料庫連結：
+mysqli_connect(ip,id,pwd,db);
+ip：資料庫所在位置，或localhost
+id：資料庫帳號
+pwd：資料庫密碼
+db：要連結的資料庫名稱
