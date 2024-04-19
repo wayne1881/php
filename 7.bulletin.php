@@ -18,3 +18,5 @@
     }
     echo "</table>"
 ?>
+佈告欄範例應用
+error_reporting(0)：取消錯誤或警告
