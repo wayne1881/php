@@ -5,3 +5,4 @@
     echo "<meta http-equiv=REFRESH content='3; url=2.login.html'>";
 
 ?>
+.
